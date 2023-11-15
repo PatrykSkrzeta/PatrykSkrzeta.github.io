@@ -2215,3 +2215,19 @@ input, select, textarea {
 
 	}
   }
+
+.projectLink{
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
+.projectLink:hover{
+	transition: 0.2s;
+	color: rgb(232, 93, 247);
+
+}
+
+.projectLink:active{
+	color: rgb(232, 93, 247);
+}
