@@ -2275,8 +2275,37 @@ input, select, textarea {
 }
 
 
+/* php */
+
+.phpl{
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
+.phpl a{
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
+.phpl:hover{
+	transition: 0.2s;
+	color: #2a49e5;
+
+}
+
+.phpl:active{
+	color: #2a49e5;
+}
 
 
+
+.php{
+	margin-bottom: 0;
+	font-size: 1rem;
+	color: #2a49e5;
+}
 
 
 
