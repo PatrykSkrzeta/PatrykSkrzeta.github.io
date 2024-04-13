@@ -2246,6 +2246,12 @@ input, select, textarea {
 	transition: 0.4s;
 }
 
+.accessp a{
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
 .accessp:hover{
 	transition: 0.2s;
 	color: #e5842a;
@@ -2262,6 +2268,10 @@ input, select, textarea {
 	margin-bottom: 0;
 	font-size: 1rem;
 	color: #e5842a;
+}
+
+.projectIntro .box h3{
+	font-size: 2;
 }
 
 
