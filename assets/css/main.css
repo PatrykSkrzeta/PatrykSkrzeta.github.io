@@ -2264,4 +2264,12 @@ input, select, textarea {
 					border-right: solid 0.6em transparent;
 				}
 				
+.access{
+color: #e5842a;
+	
+}
 
+.accessp:hover{
+	transition: 0.2s;
+	color: #e5842a;
+}
