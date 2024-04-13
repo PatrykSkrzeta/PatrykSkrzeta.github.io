@@ -2191,6 +2191,8 @@ input, select, textarea {
 
 		}
 
+
+/* python */
 .projectLabel{
 	margin-bottom: 0;
 	font-size: 1rem;
@@ -2233,43 +2235,41 @@ input, select, textarea {
 	color: rgb(232, 93, 247);
 }
 
-			.marcin{
-				display: block;
-				position: absolute;
-				background: #222222;
-				color: #ffffff;
-				top: -2.75em;
-				font-size: 0.3em;
-				height: 2.25em;
-				line-height: 2.25em;
-				left: 50%;
-				opacity: 0;
-				-moz-transition: opacity .25s ease-in-out;
-				-webkit-transition: opacity .25s ease-in-out;
-				-ms-transition: opacity .25s ease-in-out;
-				transition: opacity .25s ease-in-out;
-				width: 5.5em;
-				margin-left: -2.75em;
-				}
 
-			.marcin:after {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -0.4em;
-					left: 50%;
-					margin-left: -0.6em;
-					border-top: solid 0.6em #222222;
-					border-left: solid 0.6em transparent;
-					border-right: solid 0.6em transparent;
-				}
-				
-.access{
-color: #e5842a;
-	
+
+/* access */
+
+
+.accessp{
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
 }
 
 .accessp:hover{
 	transition: 0.2s;
 	color: #e5842a;
+
 }
+
+.accessp:active{
+	color: #e5842a;
+}
+
+
+
+.access{
+	margin-bottom: 0;
+	font-size: 1rem;
+	color: #e5842a;
+}
+
+
+
+
+
+
+
+
+
+
