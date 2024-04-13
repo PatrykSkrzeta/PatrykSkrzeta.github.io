@@ -51,7 +51,7 @@ table {
 	border-spacing: 0;
 }
 
-body {
+ {
 	-webkit-text-size-adjust: none;
 }
 
@@ -1306,7 +1306,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: rgb(232, 93, 247);
+		background-color: rgba(241, 129, 250, 1);
+		background-image: linear-gradient(180deg, rgba(241, 129, 250, 1) 37%, rgba(97, 97, 172, 1) 100%);
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
