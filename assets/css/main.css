@@ -1307,7 +1307,7 @@ input, select, textarea {
 
 	body {
 		background-color: rgba(241, 129, 250, 1);
-		background-image: linear-gradient(180deg, rgba(241, 129, 250, 1) 37%, rgba(97, 97, 172, 1) 100%);
+		background-image: linear-gradient(180deg, rgba(241, 129, 250, 1) 30%, rgba(97, 97, 172, 1) 70%);
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
