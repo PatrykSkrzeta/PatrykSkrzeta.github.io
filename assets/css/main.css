@@ -2313,6 +2313,9 @@ input, select, textarea {
 	opacity: 0.9;
 }
 
+.preview:activate{
+	opacity: 0.6;
+}
 
 
 
