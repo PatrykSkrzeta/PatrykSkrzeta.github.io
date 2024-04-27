@@ -45,6 +45,19 @@
 								<header>
 									<h2>Projects</h2>
 								</header>
+								<script>
+									$(document).ready(function(){
+   									$(".projectIntro img").click(function(){ 
+        								var imgSrc = $(this).attr("src");
+       									var gifSrc = "images/cart.gif";
+
+        
+        									if(imgSrc !== gifSrc){
+            									$(this).attr("src", gifSrc); 
+        												}
+    														});
+										});
+								</script>	
 								<section class="flex">
 									<div class="projectIntro">
 										<div class="box">
