@@ -48,16 +48,15 @@
 								</header>
 								<script>
 									$(document).ready(function(){
-   									$(".projectIntro img").click(function(){ 
-        								var imgSrc = $(this).attr("src");
-       									var gifSrc = "images/cart.gif";
-
-        
-        									if(imgSrc !== gifSrc){
-            									$(this).attr("src", gifSrc); 
-        												}
-    														});
-										});
+									    $(".projectIntro img").click(function(){
+									        var imgSrc = $(this).attr("src");
+									        var gifSrc = $(this).data("gif-src"); 
+									
+									        if(imgSrc !== gifSrc){
+									            $(this).attr("src", gifSrc); 
+									        }
+									    });
+									});
 								</script>	
 								<section class="flex">
 									<div class="projectIntro">
@@ -68,7 +67,7 @@
 										</div>
 										
 
-										<a><img width="350vw" src="images/cart1.jpg"></a>
+										<a><img width="350vw" data-gif-src="images/cart.gif" src="images/cart1.jpg"></a>
 									</div>
 									<hr>
 										<div class="projectIntro">
@@ -79,7 +78,7 @@
 										</div>
 										
 
-										<a><img width="350vw" src="images/guistock.jpg"></a>
+										<a><img width="350vw" data-gif-src="images/gui.gif" src="images/guistock.jpg"></a>
 									</div>
 									<hr>
 										<div class="projectIntro">
@@ -101,7 +100,7 @@
 										</div>
 										
 
-										<a><img width="350vw" src="images/employeetool.jpg"></a>
+										<a><img width="350vw" data-gif-src="images/mail.gif" src="images/employeetool.jpg"></a>
 									</div>
 									<hr>
 									<div class="projectIntro">
