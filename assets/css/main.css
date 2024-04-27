@@ -2311,12 +2311,11 @@ input, select, textarea {
 .preview:hover{
 	cursor: pointer;
 	opacity: 0.9;
-	box-shadow: 3px 1px 1px black;
+	box-shadow: 1px 1px 1px black;
 }
 
 .preview:activate{
 	opacity: 0.6;
-	box-shadow: 4px 2px 2px black;
 }
 
 
