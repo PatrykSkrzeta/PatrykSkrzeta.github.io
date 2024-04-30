@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	
 (function($) {
 
 	var $window = $(window),
@@ -208,5 +209,17 @@
 				});
 
 		}
+
+		// Project gifs
+											$(document).ready(function(){
+									    $(".projectIntro img").click(function(){
+									        var imgSrc = $(this).attr("src");
+									        var gifSrc = $(this).data("gif-src"); 
+									
+									        if(imgSrc !== gifSrc){
+									            $(this).attr("src", gifSrc); 
+									        }
+									    });
+									});
 
 })(jQuery);
