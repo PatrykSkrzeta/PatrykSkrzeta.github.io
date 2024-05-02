@@ -46,7 +46,41 @@
 								<header>
 									<h2>Projects</h2>
 								</header>	
-								<section class="flex">
+								<nav id="projectNav">
+									<div class="navcontainer">
+										<button class="projectbtn" onclick="filterProjects('fullstack')">Fullstack</button>
+										<button class="projectbtn" onclick="filterProjects('python-app')">Python App</button>
+										<button class="projectbtn" onclick="filterProjects('xampp')">XAMPP</button>
+									</div>
+									<div class="navcontainer">
+										<button class="projectbtn"  onclick="filterProjects('python-script')">Script</button>
+										<button class="projectbtn"  onclick="filterProjects('access')">Access</button>
+									</div>
+
+								</nav>
+								
+								<section class="flex" id="projectsContainer">
+
+
+									<script>
+									function toggleOptions() {
+									var selectItems = document.querySelector('.select-items');
+									selectItems.classList.toggle('select-hide');
+								}
+
+
+								function filterProjects(className) {
+									var projects = document.querySelectorAll('.projectIntro');
+
+									projects.forEach(function(project) {
+										if (className === '' || project.classList.contains(className)) {
+											project.style.display = 'flex';
+										} else {
+											project.style.display = 'none';
+										}
+									});
+								}
+									</script>
 
 						
 									<div class="projectIntro fullstack"">
@@ -58,9 +92,10 @@
 										
 
 										<a><img width="350vw" class="preview" data-gif-src="images/cart.gif" src="images/cart1.jpg"></a>
+										<hr>
 									</div>
 									
-									<hr>
+									
 										<div class="projectIntro python-app">
 										<div class="box">
 											<h3><a class="projectLink " href="https://github.com/PatrykSkrzeta/GUIstockchart">Stock charts generator</a></h3>
@@ -70,8 +105,9 @@
 										
 
 										<a><img width="350vw" class="preview" data-gif-src="images/gui.gif" src="images/guistock.jpg"></a>
+											<hr>
 									</div>
-									<hr>
+									
 										<div class="projectIntro fullstack">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/ExpensesTrackingAPP">Income tracking app</a></h3>
@@ -81,8 +117,9 @@
 										
 
 										<a><img width="350vw" src="images/tracking.jpg"></a>
+											<hr>
 									</div>
-									<hr>
+									
 										<div class="projectIntro fullstack">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/ManageEmployessMailPython">Employee managment and mail system app</a></h3>
@@ -92,8 +129,9 @@
 										
 
 										<a><img width="350vw" class="preview" data-gif-src="images/mail.gif" src="images/employeetool.jpg"></a>
+											<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro fullstack">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/voting-system-in-python">Voting system in python using flask and pandas</a></h3>
@@ -103,8 +141,9 @@
 										
 
 										<a><img width="350vw" src="images/votingss.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro xampp">
 										<div class="box">
 											<h3><a class="phpl" href="https://github.com/PatrykSkrzeta/phpdownloadjpegfiles">Preview and download images by their URL with PHP and jQuery</a></h3>
@@ -114,8 +153,9 @@
 										
 
 										<a><img width="350vw" src="images/imgprocessing.jpg"></a>
-									</div>
 									<hr>
+									</div>
+									
 									<div class="projectIntro xampp">
 										<div class="box">
 											<h3><a class="phpl" href="https://github.com/PatrykSkrzeta/CRUD-application-in-PHP">Simple CRUD apllication using PHP</a></h3>
@@ -125,8 +165,9 @@
 										
 
 										<a><img width="350vw" src="images/crudphp.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									
 
 				
@@ -139,8 +180,9 @@
 										
 
 										<a><img width="350vw" src="images/scraping.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro python-script">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/ExcelDataVizualizationPython">Automatize your reports in excel with python</a></h3>
@@ -150,9 +192,10 @@
 										
 
 										<a><img width="350vw" src="images/excel.jpg"></a>
+										<hr>
 									</div>
 
-									<hr>
+									
 									<div class="projectIntro python-script">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/MultipleExcelVizualizationPython">Vizualize multiple data with python</a></h3>
@@ -162,8 +205,9 @@
 										
 
 										<a><img width="350vw" src="images/multiple.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 							
 									<div class="projectIntro python-script">
 										<div class="box">
@@ -174,8 +218,9 @@
 										
 
 										<a><img width="350vw" src="images/qrcode.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 							
 									<div class="projectIntro python-script">
 										<div class="box">
@@ -186,8 +231,9 @@
 										
 
 										<a><img width="350vw" src="images/csvmix.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro python-script">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/convertcsvintoexcel">Convert .csv file to .xlsx file</a></h3>
@@ -197,8 +243,9 @@
 										
 
 										<a><img width="350vw" src="images/convert.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro python-script">
 										<div class="box">
 											<h3><a class="projectLink" href="https://github.com/PatrykSkrzeta/livedatacharts">Plotting real time live data in python</a></h3>
@@ -208,8 +255,9 @@
 										
 
 										<a><img width="350vw" src="images/livedata.jpg"></a>
+										<hr>
 									</div>
-									<hr>
+									
 									<div class="projectIntro access">
 										<div class="box">
 											<h3><a class="accessp" href="https://github.com/PatrykSkrzeta/Access-Database-Interface">Access database interface</a></h3>
