@@ -2376,5 +2376,11 @@ gap: 2rem;
 	}
   }
 
+.gitlink{
+	color: color: rgb(232, 93, 247);
+	text-decoration: none;
+	font-weight: 500;
+
+}
 
 
