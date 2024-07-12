@@ -1970,7 +1970,6 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 0;
-				height: 20em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2181,6 +2180,7 @@ input, select, textarea {
 		}
 
 .intro{
+	margin-top: 2rem;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -2190,6 +2190,7 @@ input, select, textarea {
 }
 
 .intro h1{
+
 	font-weight: 400;
 	font-size: 3rem;
 	color: rgb(239, 239, 15);
@@ -2200,8 +2201,238 @@ input, select, textarea {
 	font-size: 2rem;
 	color: rgb(239, 239, 15);
 	text-align: center;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	font-weight: 300;
 	text-shadow: 1px 1px 1px black;
-	padding: 1rem;
+	padding: 0;
+}
+
+.features{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100vw;
+}
+.featurescolumn{
+	display: flex;
+	flex-direction: column;
+}
+
+.featurescolumn ul{
+	list-style: none;
+}
+
+.featurescolumn ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.featurescolumn ul li p{
+	font-size: 1.3rem;
+}
+
+.featurescolumn ul li i{
+	font-size: 3rem; 
+	color: rgb(239, 239, 15);
+}
+
+
+
+
+.featuressite{
+	margin-top: 2rem;
+}
+
+.featuressite h1{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(239, 239, 15);
+	text-shadow: 1px 1px 1px black;
+}
+
+.featuressite ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.featuressite p{
+	margin-top: 2rem;
+	font-size: 1.7rem;
+	color: rgb(239, 239, 15);
+	text-shadow: 1px 1px 1px black;
+	font-weight: 200;
+}
+
+.featuressite ul li {
+	font-size: 1.7rem;
+	color: rgb(239, 239, 15);
+	margin: 0;
+	padding: 0;
+	text-shadow: 1px 1px 1px black;
+	margin-top: 1rem;
+	font-weight: 400;
+}
+
+.introimg{
+	text-align: center;
+}
+
+.imgcontainer{
+	width: 100%;
+	height: 40vh;
+	background-image: url('../../images/orderdetails.png');
+	margin-bottom: 5rem;
+	background-size: cover;
+	background-position: centerord;
+}
+section{
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.hashbox img{
+	width: 90vw; 
+	height: 19vh;
+}
+
+.nestedfilesbox img{
+	display: none;
+}
+
+.orderbox img{
+	height: 30vh;
+	width: 90vw;
+}
+.automationbox img{
+	width: 90vw;
+	height: 10vh;
+}
+.automationbox1 img{
+	width: 90vw;
+	height: 10vh;
+}
+.nestedex img{
+	width: 90vw;
+}
+
+.tbox img{
+	width: 90vw; 
+	height: 30vh;
+}
+
+@media (min-width: 700px) {
+
+	.imgcontainer{
+		width: 50vw;
+		height: 50vh;
+		background-image: url('../../images/intromarketplace.png');
+		margin-bottom: 5rem;
+		background-size: cover;
+	}
+	
+	.features{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 100vw;
+	}
+	.featurescolumn{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hashbox img{
+		width: auto; 
+		height: auto;
+	}
+	
+	.nestedfilesbox img{
+		display: flex;
+		width: 80vw;
+		height: 60vh;
+	}
+
+	.orderbox img{
+		height: auto;
+		width: auto;
+	}
+	.automationbox img{
+		width: 90vw;
+		height: 19.5vh;
+	}
+	.automationbox1 img{
+		width: 90vw;
+		height: 19vh;
+	}
+
+	.nestedex img{
+		width: auto;
+	}
+
+	.tbox img{
+		width: 90vw; 
+		height: 60vh;
+	}
+}
+
+.securityheader{
+	margin-top: 3rem;
+	color: rgb(239, 239, 15);
+	text-shadow: 1px 1px 1px black;
+	font-size: 2rem;
+}
+
+.classicfont{
+	font-size: 2rem;
+	color: rgb(239, 239, 15);
+	margin-top: 1rem;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px black;
+	padding: 0;
+}
+
+@media (min-width: 1300px) {
+
+	.hashbox img{
+		width: auto; 
+		height: auto;
+	}
+	
+	.nestedfilesbox img{
+		display: flex;
+		width: auto;
+		height: 70vh;
+	}
+
+	.orderbox img{
+		height: auto;
+		width: auto;
+	}
+	.automationbox img{
+		width: auto;
+		height: auto;
+	}
+	.automationbox1 img{
+		width: auto;
+		height: auto;
+	}
+
+	.nestedex img{
+		width: auto;
+	}
+
+	.tbox img{
+		width: auto; 
+		height: 70vh;
+	}
 }
