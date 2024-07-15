@@ -154,8 +154,8 @@
 										</h2>
 										<p>
 
-											The admin dashboard has several key features to help administrators manage and analyze sales data.
-											It ensures only admin users can access certain views, blocking non-admin users. The dashboard selects 
+											The admin dashboard has several key features to help administrators analyze sales data.
+											It ensures only admin users can access dashboard, blocking non-admin users. The dashboard selects 
 											the correct layout based on the user's role, showing a different view for admins and regular users.
 											It finds the top three best-selling products by counting order items. It also calculates the number 
 											of orders placed on each date and the total revenue made on each date. This data is used to create 
@@ -185,7 +185,134 @@
 
 						<!-- Contact -->
 							<article id="Demo" class="panel">
+								<section class="featuressite">
+									<h1>How app works?</h1>
+									<p>Table of content<p>
+									<ul>
+										<li>
+											<a href="#loginsec"> -> <u>Login managment.</u></a>
+										</li>
+										<li>
+											<a href="#adminsec"> -> <u>Admin dashboard</u></a>
+										</li>
+										<li>
+											<a href="#addingsec"> -> <u>How to add products and orders.</u></a>
+										</li>
+										<li>
+											<a href="#searchsec"> -> <u>Products and orders searching.</u></a>
+										</li>
+										<li>
+											<a href="#pdfsec"> -> <u>PDF Downloading</u></a>
+										</li>
+										<li>
+											<a href="#vizsec"> -> <u>Data vizualization</u></a>
+										</li>
 
+									</ul>
+									<div style="margin-top: 3rem;">
+										<h1 id="loginsec">Login managment</h1>
+										<p>	
+											The application includes robust login management functionalities. 
+											Users can log in using their email and password through a secure login form. 
+											The login system checks the credentials against stored user data, ensuring secure access.
+											 Logged-in users can also log out, and there is support for different user roles, including 
+											 administrators who have additional privileges.
+										</p>
+										<h1 id="adminsec">Admin dashboard</h1>
+										<p>	
+											<div class="adminbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/4.png" alt="">
+											</div>	
+										</p>
+
+										<p>
+											Orders Count by Date: Displays the number of orders placed on each date, helping track sales trends over time. </br></br>
+Top Selling Products: Highlights the most popular products based on the quantity sold, providing insights into customer preferences.</br></br>
+Least Popular Products: Identifies products with the lowest sales, aiding in inventory management and marketing strategies.</br></br>
+Revenue by Date: Shows the total revenue generated on each date, providing a clear view of the business's financial performance.
+										</p>
+										<h1 id="addingsec">How to add products and orders</h1>
+										<p>	
+											Adding Products: Accessible via a dedicated form, users can input product details such as name, 
+											category, type, value, and price. This information is then saved to the database, 
+											making the new products available for orders.	
+										</p>
+										<p>
+											Users can create new orders by filling out an order form, which includes customer 
+											information and order items. Each order item includes a product, quantity, and total price. 
+											The application ensures that sufficient stock is available for each product and calculates the total 
+											order price, applying a discount if applicable.
+										</p>
+										<h1 id="searchsec">Products and orders searching</h1>
+										<div class="searchcontent">
+											<div class="searchbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/111.png" alt="">
+											</div>
+											<div class="pbox">
+												<p>	Users can search for products using a search query that matches the product name. 
+													The search results display relevant products, facilitating easy inventory management.
+												</p>
+												<p>
+													Users can search for orders by customer name or date. 
+													The application processes the search queries and returns matching orders, 
+													including the total quantity of items in each order.
+												</p>
+											</div>
+
+										</div>
+										<h1 id="pdfsec">PDF Downloading</h1>
+										<p>		
+											For each order, users can download a detailed PDF summary.
+											 This feature generates a PDF document containing all relevant order details, 
+											 such as customer information, order items, quantities, and prices. 
+											 The PDF is formatted for clarity and includes a total order price and any applied discounts.
+											  This functionality helps in maintaining organized and accessible records of orders.
+										</p>
+										<div class="pdfbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/5.png" alt="">
+										</div>
+										<h1 id="vizsec">Data vizualization</h1>
+
+										<p>		
+										</p>
+										<div class="viz1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/100.png" alt="">
+										</div>	
+										<div class="viz2" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/3.png" alt="">
+										</div>	
+
+									</div>
+								</section>
+							</article>
+
+							<article id="Setup" class="panel">
+								<section class="featuressite">
+									<h2 class="securityheader">Download for Windows</h2>
+									<p>
+										1. Download files from <a style="color: green;" href="">here</a>. </br>
+										2. Open application folder in IDE and create new terminal.</br>
+										3. Create and activate new virtual environment. </br>
+										4. Paste in terminal -> .venv/scripts/activate</br>
+										5. Paste in terminal -> pip install -r req.txt</br>
+										6. Paste in terminal -> python app.py
+									</p>
+	
+									
+									<h2 class="securityheader">Download for Unix</h2>
+									<p>
+										1. Download files from <a style="color: green;" href="">here</a>.</br>
+										2. Open application folder in IDE and create new terminal.</br>
+										3. Create and activate new virtual environment. </br>
+										4. Paste in terminal -> source .venv/bin/activate</br>
+										5. Paste in terminal -> pip3 install -r req.txt</br>
+										6. Paste in terminal -> python3 app.py
+									</p>
+
+									<h2 class="securityheader">User passwords:</h2>
+									<p>admin@company.com; zaq1@WSX</p>
+									<p>employee@company.com; Bhgvc4</p>
+								</section>
 							</article>
 
 					</div>
