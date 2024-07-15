@@ -2304,7 +2304,8 @@ section{
 }
 
 .nestedfilesbox img{
-	display: none;
+	width: 90vw;
+	height: 40vh;
 }
 
 .orderbox img{
