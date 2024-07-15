@@ -2328,6 +2328,38 @@ section{
 	height: 30vh;
 }
 
+.adminbox img{
+	width: 100vw;
+	height: 35vh;
+}
+
+.searchbox{
+	margin-top: 1rem;
+}
+.searchbox img{
+	width: 80vw;
+	height: 8vh;
+}
+
+.viz1 img{
+	width: 23rem;
+	height: 16rem;
+}
+.viz1{
+	margin-bottom: 1rem;
+}
+.viz2 img{
+	width: 23rem;
+	height: 16rem;
+}
+
+
+.pdfbox img{
+	width: 140vw;
+}
+.pdfbox{
+	margin-bottom: 3rem;
+}
 @media (min-width: 700px) {
 
 	.imgcontainer{
@@ -2383,6 +2415,35 @@ section{
 		width: 90vw; 
 		height: 60vh;
 	}
+	.adminbox img{
+		width: 40vw;
+		height: 60vh;
+	}
+
+	.searchbox img{
+		width: 20vw;
+		height: 9vh;
+	}
+	.searchbox{
+		float: right;
+	}
+
+	.viz1 img{
+		width: auto;
+		height: auto;
+	}
+
+	.viz2 img{
+		width: auto;
+		height: auto;
+	}
+	
+	
+	.pdfbox img{
+		width: 140vw;
+	}
+
+
 }
 
 .securityheader{
@@ -2400,6 +2461,13 @@ section{
 	text-shadow: 1px 1px 1px black;
 	padding: 0;
 }
+
+.featuressite ul li a{
+	text-decoration: none;
+	color: rgb(239, 239, 29);
+}
+
+
 
 @media (min-width: 1300px) {
 
@@ -2435,4 +2503,8 @@ section{
 		width: auto; 
 		height: 70vh;
 	}
+}
+
+html{
+	scroll-behavior: smooth;
 }
