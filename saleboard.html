@@ -1,1 +1,337 @@
-<
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Patryk Skrzęta - Marketplace</title>
+		<meta name="description" content="Welcome to my portfolio, please take a look on my projects!">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/pages.css" />
+		<link rel="icon" type="image/x-icon" href="images/icon.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#home" class="icon solid fa-bolt"><span>Intro</span></a>
+						<a href="#Features" class="icon solid fa-clipboard-check"><span>Features</span></a>
+						<a href="#Demo" class="icon solid fa-layer-group"><span>Demo</span></a>
+						<a href="#Setup" class="icon solid fa-download"><span>Setup</span></a>
+						<a href="index.html#projects" class="icon solid fa-home"><span>Home</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+                                <section>
+									<div class="intro">
+										<h1>Marketplace</h1>
+										<p>An advanced order and product management application </br>built with Flask and Mongoengine for handling nested files.</p>
+										<div class="imgcontainer">
+								
+										</div>
+									</div>
+
+									<div class="features">
+										<div class="featurescolumn">
+											<ul>
+												<li>
+													<i class="icon solid fa-eye"></i>
+													<p>User friendly and clean interface.</p>
+												</li>
+												<li>
+													<i  class="icon solid fa-lock"></i>
+													<p>Locked pages for guests.</p>
+												</li>
+												<li>
+													<i  class="icon solid fa-money-bill"></i>
+													<p>Automated warehouse managment.</p>
+												</li>
+											</ul>
+										</div>
+										<div class="featurescolumn">
+											<ul>
+												<li>
+													<i  class="icon solid fa-shopping-cart"></i>
+													<p>Full orders and magazine managment.</p>
+												</li>
+												<LI>
+													<i  class="icon solid fa-print"></i>
+													<p>Automatic PDF details generator.</p>
+												</LI>
+												<li>
+													<i  class="icon solid fa-compass"></i>
+													<p>Admin panel with important informations.</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+                                </section>
+							</article>
+
+						<!-- Work -->
+							<article id="Features" class="panel">
+								<section class="featuressite">
+									<h1>Marketplace is getting better every commit.</h1>
+									
+									<ul> <p>Technologies used:</p>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> HTML, CSS, Boostrap</li>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Javascript, Chart.js</li>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Flask (Flask-admin, Flask-wtf, Werkzeug.security)</li>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Mongoengine</li>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Reportlab</li>
+										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Other python libraries (Datetime, math etc...)</li>
+									</ul>
+									<h2 class="securityheader">
+										Nested files
+									</h2>
+									<div  class="nestedfilesbox"style="margin-top: 2rem; display: flex; justify-content: center; align-items: center; align-content: center;">
+										<img style="margin: 0; padding: 0;" src="images/12.png" alt="">
+									</div>
+									<p>
+										The Product model stores product details. The OrderItem embedded document references a Product 
+										and includes quantity and total price. The Order model contains a list of OrderItem documents, 
+										representing the order's items. 
+										This setup efficiently organizes managing multiple products in single order.
+									</p>
+									<div class="nestedex" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+										<img style="margin: 0; padding: 0; " src="images/nestedfilesex.png" alt="">
+									</div>
+										<h2 class="securityheader">
+											Process automation
+										</h2>
+										<p>
+											The Flask route automates order processing by tracking magazine and applying discounts. 
+											It checks product stock for order item, updates magazine, and calculates the
+											total price. The order is then saved to the database.
+										</p>
+
+										<div class="">
+											<div class="tbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/1t.png" alt="">
+											</div>
+											<ul>
+												<li>
+													<p>- Iterates through form order items and fetches the corresponding product from the database.</p>
+												</li>
+												<li>
+													<p>- Checks if there is sufficient stock; if not, it flashes an error message and stops processing.</p>
+												</li>
+												<li>
+													<p>- Calculates the total price for each item, updates the product stock, and appends the item to the order.</p>
+												</li>
+												<li>
+													<p>-Handles the case where the product does not exist by flashing an error message.</p>
+												</li>
+												<li>
+													<p>-If the total order price exceeds 500, applies a 7% discount and flashes a success message.</p>
+												</li>
+											</ul>
+										<div class="automationcontainer">
+											<div class="automationbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/before.png" alt="">
+											</div>
+										</br>
+											<div class="automationbox1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/after.png" alt="">
+											</div>
+	
+										</div>
+
+										<h2 class="securityheader">
+											Admin dashboard
+										</h2>
+										<p>
+
+											The admin dashboard has several key features to help administrators analyze sales data.
+											It ensures only admin users can access dashboard, blocking non-admin users. The dashboard selects 
+											the correct layout based on the user's role, showing a different view for admins and regular users.
+											It finds the top three best-selling products by counting order items. It also calculates the number 
+											of orders placed on each date and the total revenue made on each date. This data is used to create 
+											charts with Chart.js, showing trends and insights. Additionally, it identifies the three least popular 
+											products based on how many were sold.
+										</p>
+										<h2 class="securityheader">
+											PDF generator
+										</h2>
+										<p>
+											
+										</p>
+										<div class="orderbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/orderpdf.png" alt="">
+										</div>
+										<h2 class="securityheader">
+											Security
+										</h2>
+										<p>
+											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection.
+										</p>
+										<div class="hashbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/hash.png" alt="">
+										</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="Demo" class="panel">
+								<section class="featuressite">
+									<h1>How app works?</h1>
+									<p>Table of content<p>
+									<ul>
+										<li>
+											<a href="#loginsec"> -> <u>Login managment.</u></a>
+										</li>
+										<li>
+											<a href="#adminsec"> -> <u>Admin dashboard</u></a>
+										</li>
+										<li>
+											<a href="#addingsec"> -> <u>How to add products and orders.</u></a>
+										</li>
+										<li>
+											<a href="#searchsec"> -> <u>Products and orders searching.</u></a>
+										</li>
+										<li>
+											<a href="#pdfsec"> -> <u>PDF Downloading</u></a>
+										</li>
+										<li>
+											<a href="#vizsec"> -> <u>Data vizualization</u></a>
+										</li>
+
+									</ul>
+									<div style="margin-top: 3rem;">
+										<h1 id="loginsec">Login managment</h1>
+										<p>	
+											The application includes robust login management functionalities. 
+											Users can log in using their email and password through a secure login form. 
+											The login system checks the credentials against stored user data, ensuring secure access.
+											 Logged-in users can also log out, and there is support for different user roles, including 
+											 administrators who have additional privileges.
+										</p>
+										<h1 id="adminsec">Admin dashboard</h1>
+										<p>	
+											<div class="adminbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/4.png" alt="">
+											</div>	
+										</p>
+
+										<p>
+											Orders Count by Date: Displays the number of orders placed on each date, helping track sales trends over time. </br></br>
+Top Selling Products: Highlights the most popular products based on the quantity sold, providing insights into customer preferences.</br></br>
+Least Popular Products: Identifies products with the lowest sales, aiding in inventory management and marketing strategies.</br></br>
+Revenue by Date: Shows the total revenue generated on each date, providing a clear view of the business's financial performance.
+										</p>
+										<h1 id="addingsec">How to add products and orders</h1>
+										<p>	
+											Adding Products: Accessible via a dedicated form, users can input product details such as name, 
+											category, type, value, and price. This information is then saved to the database, 
+											making the new products available for orders.	
+										</p>
+										<p>
+											Users can create new orders by filling out an order form, which includes customer 
+											information and order items. Each order item includes a product, quantity, and total price. 
+											The application ensures that sufficient stock is available for each product and calculates the total 
+											order price, applying a discount if applicable.
+										</p>
+										<h1 id="searchsec">Products and orders searching</h1>
+										<div class="searchcontent">
+											<div class="searchbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+												<img style="margin: 0; padding: 0; " src="images/111.png" alt="">
+											</div>
+											<div class="pbox">
+												<p>	Users can search for products using a search query that matches the product name. 
+													The search results display relevant products, facilitating easy inventory management.
+												</p>
+												<p>
+													Users can search for orders by customer name or date. 
+													The application processes the search queries and returns matching orders, 
+													including the total quantity of items in each order.
+												</p>
+											</div>
+
+										</div>
+										<h1 id="pdfsec">PDF Downloading</h1>
+										<p>		
+											For each order, users can download a detailed PDF summary.
+											 This feature generates a PDF document containing all relevant order details, 
+											 such as customer information, order items, quantities, and prices. 
+											 The PDF is formatted for clarity and includes a total order price and any applied discounts.
+											  This functionality helps in maintaining organized and accessible records of orders.
+										</p>
+										<div class="pdfbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/5.png" alt="">
+										</div>
+										<h1 id="vizsec">Data vizualization</h1>
+
+										<p>		
+										</p>
+										<div class="viz1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/100.png" alt="">
+										</div>	
+										<div class="viz2" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/3.png" alt="">
+										</div>	
+
+									</div>
+								</section>
+							</article>
+
+							<article id="Setup" class="panel">
+								<section class="featuressite">
+									<h2 class="securityheader">Download for Windows</h2>
+									<p>
+										1. Download files from <a style="color: green;" href="">here</a>. </br>
+										2. Open application folder in IDE and create new terminal.</br>
+										3. Create and activate new virtual environment. </br>
+										4. Paste in terminal -> .venv/scripts/activate</br>
+										5. Paste in terminal -> pip install -r req.txt</br>
+										6. Paste in terminal -> python app.py
+									</p>
+	
+									
+									<h2 class="securityheader">Download for Unix</h2>
+									<p>
+										1. Download files from <a style="color: green;" href="">here</a>.</br>
+										2. Open application folder in IDE and create new terminal.</br>
+										3. Create and activate new virtual environment. </br>
+										4. Paste in terminal -> source .venv/bin/activate</br>
+										5. Paste in terminal -> pip3 install -r req.txt</br>
+										6. Paste in terminal -> python3 app.py
+									</p>
+
+									<h2 class="securityheader">User passwords:</h2>
+									<p>admin@company.com; zaq1@WSX</p>
+									<p>employee@company.com; Bhgvc4</p>
+								</section>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Patryk Skrzęta all rights reserved</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
