@@ -6,8 +6,8 @@
 -->
 <html>
 	<head>
-		<title>Patryk Skrzęta - Marketplace</title>
-		<meta name="description" content="Welcome to my portfolio, please take a look on my projects!">
+		<title>Patryk Skrzęta - Portfolio</title>
+		<meta name="description" content="">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/pages.css" />
@@ -16,23 +16,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper-->
 			<div id="wrapper">
-
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#home" class="icon solid fa-bolt"><span>Intro</span></a>
+						<a href="#home" class="icon solid fa-bolt" style="color: rgb(239, 239, 29);"><span>Intro</span></a>
 						<a href="#Features" class="icon solid fa-clipboard-check"><span>Features</span></a>
 						<a href="#Demo" class="icon solid fa-layer-group"><span>Demo</span></a>
 						<a href="#Setup" class="icon solid fa-download"><span>Setup</span></a>
 						<a href="index.html#projects" class="icon solid fa-home"><span>Home</span></a>
 					</nav>
-
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Me -->
+						<!-- Intro -->
 							<article id="home" class="panel intro">
                                 <section>
 									<div class="intro">
@@ -80,7 +76,7 @@
                                 </section>
 							</article>
 
-						<!-- Work -->
+						<!-- Features -->
 							<article id="Features" class="panel">
 								<section class="featuressite">
 									<h1>Marketplace is getting better every commit.</h1>
@@ -183,7 +179,7 @@
 								</section>
 							</article>
 
-						<!-- Contact -->
+						<!-- Demo -->
 							<article id="Demo" class="panel">
 								<section class="featuressite">
 									<h1>How app works?</h1>
@@ -207,7 +203,9 @@
 										<li>
 											<a href="#vizsec"> -> <u>Data vizualization</u></a>
 										</li>
-
+										<li>
+											<a href="#usersec"> -> <u>User interactivity</u></a>
+										</li>
 									</ul>
 									<div style="margin-top: 3rem;">
 										<h1 id="loginsec">Login managment</h1>
@@ -226,10 +224,13 @@
 										</p>
 
 										<p>
-											Orders Count by Date: Displays the number of orders placed on each date, helping track sales trends over time. </br></br>
-Top Selling Products: Highlights the most popular products based on the quantity sold, providing insights into customer preferences.</br></br>
-Least Popular Products: Identifies products with the lowest sales, aiding in inventory management and marketing strategies.</br></br>
-Revenue by Date: Shows the total revenue generated on each date, providing a clear view of the business's financial performance.
+											<strong>Charts:</strong> </br>
+											-> Orders Count by Date: Displays the number of orders placed on each date, helping track sales trends over time. </br>
+											-> Revenue by Date: Shows the total revenue generated on each date, providing a clear view of the business's financial performance.</br></br>
+											<strong>Information about products:</strong></br>
+											-> Top Selling Products: Highlights the most popular products based on the quantity sold, providing insights into customer preferences.</br>
+											-> Least Popular Products: Identifies products with the lowest sales, aiding in inventory management and marketing strategies.
+
 										</p>
 										<h1 id="addingsec">How to add products and orders</h1>
 										<p>	
@@ -237,12 +238,19 @@ Revenue by Date: Shows the total revenue generated on each date, providing a cle
 											category, type, value, and price. This information is then saved to the database, 
 											making the new products available for orders.	
 										</p>
+
+										<div class="addproduct" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/addproduct.png" alt="">
+										</div>	
 										<p>
 											Users can create new orders by filling out an order form, which includes customer 
 											information and order items. Each order item includes a product, quantity, and total price. 
 											The application ensures that sufficient stock is available for each product and calculates the total 
 											order price, applying a discount if applicable.
 										</p>
+										<div class="addorder" style=" display: flex; justify-content: center; align-items: center; align-content: center; margin-bottom: 3rem;">
+											<img style="margin: 0; padding: 0; " src="images/addorder.png" alt="">
+										</div>	
 										<h1 id="searchsec">Products and orders searching</h1>
 										<div class="searchcontent">
 											<div class="searchbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
@@ -272,16 +280,36 @@ Revenue by Date: Shows the total revenue generated on each date, providing a cle
 											<img style="margin: 0; padding: 0; " src="images/5.png" alt="">
 										</div>
 										<h1 id="vizsec">Data vizualization</h1>
-
-										<p>		
-										</p>
 										<div class="viz1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/100.png" alt="">
+											<img style="margin: 0; padding: 0; margin-top: 3rem; " src="images/html.png" alt="">
 										</div>	
+										<p>		
+											This section of the application displays an orders table,
+											 providing a detailed view of each order's information. The table is
+											  implemented using HTML with embedded Jinja2 template tags for dynamic content rendering.
+											Data vizualization for products is made by the same way.
+										</p>
+
 										<div class="viz2" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
 											<img style="margin: 0; padding: 0; " src="images/3.png" alt="">
 										</div>	
 
+									</div>
+									<div id="usersec" style="margin-top: 3rem;">
+										<h1>User interactivity</h1>
+										<p>
+											The application uses JavaScript-based modal dialogs to improve user interaction and application experience. 
+											These modals help confirm actions and provide feedback to the user. 
+										</p>
+										<div class="notifi" style=" display: flex; justify-content: center; align-items: center; align-content: center; gap: 1rem;">
+											<img style="margin: 0; padding: 0; " src="images/6.png" alt="">
+											<img style="margin: 0; padding: 0; " src="images/8.png" alt="">
+											
+										</div>
+										<div class="notifi" style=" display: flex; justify-content: center; align-items: center; align-content: center; margin-top: 1rem;">
+											<img style="margin: 0; padding: 0; " src="images/7.png" alt="">
+											
+										</div>
 									</div>
 								</section>
 							</article>
