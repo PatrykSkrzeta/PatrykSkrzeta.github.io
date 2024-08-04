@@ -2533,7 +2533,26 @@ section{
 
 }
 
-html{
-	scroll-behavior: smooth;
-}
+	html{
+		scroll-behavior: smooth;
+	}
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2525e4 #2525e4;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #2525e4;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2525e4;
+    border-radius: 10px;
+    border: 3px none #2525e4;
+  }
