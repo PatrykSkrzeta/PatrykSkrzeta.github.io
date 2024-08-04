@@ -2361,6 +2361,23 @@ section{
 .pdfbox{
 	margin-bottom: 3rem;
 }
+.notifi img{
+	width: 70vw;
+}
+
+.notifi{
+	flex-direction: column;
+}
+
+.addorder img{
+	width: 80vw;
+	height: max-content;
+}
+
+.addproduct img{
+	width: 80vw;
+	height: max-content;
+}
 @media (min-width: 700px) {
 
 	.imgcontainer{
@@ -2429,21 +2446,31 @@ section{
 	}
 
 	.viz1 img{
-		width: auto;
-		height: auto;
+		width: 55vw;
+		height: max-content;
 	}
 
 	.viz2 img{
-		width: auto;
-		height: auto;
+		width: 55vw;
+		height: max-content;
 	}
 	
 	
 	.pdfbox img{
 		width: 140vw;
+	
 	}
 
 
+
+	.notifi img{
+		width: 30vw;
+	}
+
+	.notifi{
+		flex-direction: row;
+		
+	}
 }
 
 .securityheader{
@@ -2503,8 +2530,10 @@ section{
 		width: auto; 
 		height: 70vh;
 	}
+
 }
 
 html{
 	scroll-behavior: smooth;
 }
+
