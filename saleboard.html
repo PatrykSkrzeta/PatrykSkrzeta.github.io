@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Patryk Skrzęta - Marketplace</title>
+		<title>Patryk Skrzęta - Portfolio</title>
 		<meta name="description" content="Welcome to my portfolio, please take a look on my projects!">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/pages.css" />
+		<link rel="stylesheet" href="assets/css/sales.css" />
 		<link rel="icon" type="image/x-icon" href="images/icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#home" class="icon solid fa-bolt"><span>Intro</span></a>
-						<a href="#Features" class="icon solid fa-clipboard-check"><span>Features</span></a>
+						<a href="#Features" class="icon solid fa-file-import"><span>Features</span></a>
 						<a href="#Demo" class="icon solid fa-layer-group"><span>Demo</span></a>
 						<a href="#Setup" class="icon solid fa-download"><span>Setup</span></a>
 						<a href="index.html#projects" class="icon solid fa-home"><span>Home</span></a>
@@ -34,285 +34,278 @@
 
 						<!-- Me -->
 							<article id="home" class="panel intro">
-                                <section>
-									<div class="intro">
-										<h1>Marketplace</h1>
-										<p>An advanced order and product management application </br>built with Flask and Mongoengine for handling nested files.</p>
-										<div class="imgcontainer">
-								
-										</div>
-									</div>
+								<div class="box">
+									<h1>Saleboard</h1>
+									<p>Solution for storing customers data in one place</br> bulit with Flask, SQLAlchemy and Pandas.  </p>
+									<img class="introimg" src="images/salelogo.png">
 
-									<div class="features">
-										<div class="featurescolumn">
+									<div class="cons">
+										<div class="conscolumn">
 											<ul>
 												<li>
-													<i class="icon solid fa-eye"></i>
-													<p>User friendly and clean interface.</p>
+													<i  class="icon solid fa-table ikonkaintro"></i>
+													<p>Easy to read data</p>
 												</li>
 												<li>
-													<i  class="icon solid fa-lock"></i>
-													<p>Locked pages for guests.</p>
+													<i  class="icon solid fa-chart-bar ikonkaintro"></i>
+													<p>Interactive live charts</p>
 												</li>
 												<li>
-													<i  class="icon solid fa-money-bill"></i>
-													<p>Automated warehouse managment.</p>
+													<i  class="icon solid fa-upload ikonkaintro"></i>
+													<p>CSV file upload pipeline</p>
 												</li>
 											</ul>
 										</div>
-										<div class="featurescolumn">
+										<div class="conscolumn">
 											<ul>
 												<li>
-													<i  class="icon solid fa-shopping-cart"></i>
-													<p>Full orders and magazine managment.</p>
+													<i  class="icon solid fa-lock ikonkaintro"></i>
+													<p>Two-step verification</p>
 												</li>
 												<LI>
-													<i  class="icon solid fa-print"></i>
-													<p>Automatic PDF details generator.</p>
+													<i  class="icon solid fa-user ikonkaintro"></i>
+													<p>Clean user interface</p>
 												</LI>
 												<li>
-													<i  class="icon solid fa-compass"></i>
-													<p>Admin panel with important informations.</p>
+													<i  class="icon solid fa-search ikonkaintro"></i>
+													<p>Advanced searching options</p>
 												</li>
 											</ul>
 										</div>
 									</div>
-                                </section>
 							</article>
 
 						<!-- Work -->
 							<article id="Features" class="panel">
-								<section class="featuressite">
-									<h1>Marketplace is getting better every commit.</h1>
-									
-									<ul> <p>Technologies used:</p>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> HTML, CSS, Boostrap</li>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Javascript, Chart.js</li>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Flask (Flask-admin, Flask-wtf, Werkzeug.security)</li>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Mongoengine</li>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Reportlab</li>
-										<li><span style="color: rgb(34, 252, 34); font-size: 1.2rem;">+</span> Other python libraries (Datetime, math etc...)</li>
+									<h1>
+										Saleboard is made with foucus on user experience.
+									</h1>
+									<p>Technologies used:</p>
+									<ul>
+										<li><span style="color: rgb(170, 233, 99);">+ </span>HTML, CSS, JS, Bootstrap</li>
+										<li><span style="color: rgb(170, 233, 99);">+ </span>Pandas</li>
+										<li><span style="color: rgb(170, 233, 99);">+ </span>Flask (werkzeug.security, flask-mail, flask-login, flask-wtf, flask-sqlalchemy)</li>
+										<li><span style="color: rgb(170, 233, 99);">+ </span>Sqlite database</li>
+										<li><span style="color: rgb(170, 233, 99);">+ </span>Chart.js</li>
 									</ul>
-									<h2 class="securityheader">
-										Nested files
-									</h2>
-									<div  class="nestedfilesbox"style="margin-top: 2rem; display: flex; justify-content: center; align-items: center; align-content: center;">
-										<img style="margin: 0; padding: 0;" src="images/12.png" alt="">
-									</div>
-									<p>
-										The Product model stores product details. The OrderItem embedded document references a Product 
-										and includes quantity and total price. The Order model contains a list of OrderItem documents, 
-										representing the order's items. 
-										This setup efficiently organizes managing multiple products in single order.
-									</p>
-									<div class="nestedex" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-										<img style="margin: 0; padding: 0; " src="images/nestedfilesex.png" alt="">
-									</div>
-										<h2 class="securityheader">
-											Process automation
-										</h2>
-										<p>
-											The Flask route automates order processing by tracking magazine and applying discounts. 
-											It checks product stock for order item, updates magazine, and calculates the
-											total price. The order is then saved to the database.
-										</p>
 
-										<div class="">
-											<div class="tbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-												<img style="margin: 0; padding: 0; " src="images/1t.png" alt="">
-											</div>
-											<ul>
-												<li>
-													<p>- Iterates through form order items and fetches the corresponding product from the database.</p>
-												</li>
-												<li>
-													<p>- Checks if there is sufficient stock; if not, it flashes an error message and stops processing.</p>
-												</li>
-												<li>
-													<p>- Calculates the total price for each item, updates the product stock, and appends the item to the order.</p>
-												</li>
-												<li>
-													<p>-Handles the case where the product does not exist by flashing an error message.</p>
-												</li>
-												<li>
-													<p>-If the total order price exceeds 500, applies a 7% discount and flashes a success message.</p>
-												</li>
-											</ul>
-										<div class="automationcontainer">
-											<div class="automationbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-												<img style="margin: 0; padding: 0; " src="images/before.png" alt="">
-											</div>
-										</br>
-											<div class="automationbox1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-												<img style="margin: 0; padding: 0; " src="images/after.png" alt="">
-											</div>
-	
-										</div>
+									<h2>CSV file upload pipeline</h2>
+									<p>This application implements a robust pipeline for uploading, validating, processing, and storing CSV data. Here's a detailed description of the pipeline:</p>
+										
+									<style>
 
-										<h2 class="securityheader">
-											Admin dashboard
-										</h2>
-										<p>
-
-											The admin dashboard has several key features to help administrators analyze sales data.
-											It ensures only admin users can access dashboard, blocking non-admin users. The dashboard selects 
-											the correct layout based on the user's role, showing a different view for admins and regular users.
-											It finds the top three best-selling products by counting order items. It also calculates the number 
-											of orders placed on each date and the total revenue made on each date. This data is used to create 
-											charts with Chart.js, showing trends and insights. Additionally, it identifies the three least popular 
-											products based on how many were sold.
-										</p>
-										<h2 class="securityheader">
-											PDF generator
-										</h2>
-										<p>
+									</style>
 											
-										</p>
-										<div class="orderbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/orderpdf.png" alt="">
-										</div>
-										<h2 class="securityheader">
-											Security
-										</h2>
-										<p>
-											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection.
-										</p>
-										<div class="hashbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/hash.png" alt="">
-										</div>
-								</section>
+<ol class="pipelineicons">
+    <li>
+        <p>User selects a CSV file from their local system and uploads it through a form.</p>
+        <div class="pipebox">
+            <i class="fa fa-folder"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+form id="upload-form" method="post" action="{{ url_for('upload_review_csv') }}" enctype="multipart/form-data" style="display: none;">
+input type="file" name="file" id="file-input" accept=".csv" required>
+/form>
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Ensure that a file is included in the upload request.</p>
+        <div class="pipebox">
+            <i class="fa fa-check"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+if 'file' not in request.files:
+    flash('No file part', 'danger')
+    return redirect(url_for('sales'))
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Verify that a filename is provided.</p>
+        <div class="pipebox">
+            <i class="fa fa-search"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+if file.filename == '':
+    flash('No selected file', 'danger')
+    return redirect(url_for('review'))
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Ensure the file has a ".csv" extension.</p>
+        <div class="pipebox">
+            <i class="fa fa-broom"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+if not file.filename.endswith('.csv'):
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Save the uploaded file to a dedicated dir on the server.</p>
+        <div class="pipebox">
+            <i class="fa fa-save"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+file.save(os.path.join('uploads', file.filename))
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Use Pandas to read the CSV file into a Dataframe.</p>
+        <div class="pipebox">
+            <i class="fa fa-chart-bar"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+df = pd.read_csv(os.path.join('uploads', file.filename))
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Making sure that data types, and data structure is correct.</p>
+        <div class="pipebox">
+            <i class="fa fa-wrench"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+# Validate dataframe
+                </code>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>After successful validation save it to the Sqlite3 database using SQLAlchemy.</p>
+        <div class="pipebox">
+            <i class="fa fa-flask"></i>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code>
+df.to_sql('reviews', con=db.engine, if_exists='replace', index=False)
+flash('Data has been read correctly!', 'success')
+except Exception as e:
+    flash(f'ERROR: {str(e)}', 'danger')
+    os.remove(file_path)
+return redirect(url_for('review'))
+                </code>
+            </div>
+        </div>
+    </li>
+</ol>
+
+<h2>Chart.js</h2>
+<p>Chart.js is used to create interactive and visually appealing charts for displaying data. Here's an overview of how Chart.js is integrated:</p>
+<ol>
+    <li>
+        <p><strong>Query Data</strong> The average values of various review metrics (product quality, shipping quality, shipping time, contact quality) are calculated using SQLAlchemy queries.</p>
+		<div class="chartbox">
+        <div class="code-container">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <code>
+# Example SQLAlchemy query to calculate averages
+averages = db.session.query(
+    func.avg(Review.product_quality).label('avg_product_quality'),
+    func.avg(Review.shipping_quality).label('avg_shipping_quality'),
+    func.avg(Review.shipping_time).label('avg_shipping_time'),
+    func.avg(Review.contact_quality).label('avg_contact_quality')
+).all()
+            </code>
+        </div>
+
+		</div>
+
+    </li>
+    <li>
+        <p><strong>Prepare Chart Data</strong> The queried data is organized into a dictionary with labels and data points.</p>
+		<div class="chartbox">
+			
+		</div>
+        <div class="code-containerc">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <code>
+# Example data preparation for Chart.js
+chart_data = {
+    'labels': ['Product Quality', 'Shipping Quality', 'Shipping Time', 'Contact Quality'],
+    'datasets': [{
+        'label': 'Average Ratings',
+        'data': [avg['avg_product_quality'], avg['avg_shipping_quality'], avg['avg_shipping_time'], avg['avg_contact_quality']],
+        'backgroundColor': 'rgba(75, 192, 192, 0.2)',
+        'borderColor': 'rgba(75, 192, 192, 1)',
+        'borderWidth': 1
+    }]
+}
+            </code>
+        </div>
+    </li>
+    <li>
+        <p>Use Chart.js to create the chart. The chart_data passed from Flask is used to populate the chart.</p>
+		<div class="chartbox">
+			<div class="code-containerc">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<code>
+	# Example of Chart.js integration in HTML
+	
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'bar',
+		data: {{ chart_data|tojson }},
+		options: {
+			scales: {
+				y: {
+					beginAtZero: true
+				}
+			}
+		}
+	});
+				</code>
+			</div>
+		</div>
+
+    </li>
+</ol>
+<img src="images/salelogo.png" alt="" class="chartimg" style="text-align: center; width: 20vw; margin-bottom: 3rem;">
+									<h2>Security and two-step verification</h2>
+
+
+									<h2>Review stars philosophy</h2>
+									<p>After retrieving and sorting the reviews, each numeric rating is converted to a visual representation using stars.</p>
+									<ol>
+										<li><p>Iterate through each review in the retrieved data</p></li>
+										<li><p>For each rating attribute (product_quality, shipping_time, shipping_quality, contact_quality), the numeric value is replaced with a corresponding number of star symbols (&#9733;).</p></li>
+									</ol>
+									<p>Example</p>
+									<ol>
+										<li><p>
+											If review.product_quality is 4, it will be converted to &#9733; &#9733; &#9733; &#9733;.
+										</p></li>
+									</ol>
+									<img src="images/stars.png" alt="">
 							</article>
 
 						<!-- Contact -->
 							<article id="Demo" class="panel">
-								<section class="featuressite">
-									<h1>How app works?</h1>
-									<p>Table of content<p>
-									<ul>
-										<li>
-											<a href="#loginsec"> -> <u>Login managment.</u></a>
-										</li>
-										<li>
-											<a href="#adminsec"> -> <u>Admin dashboard</u></a>
-										</li>
-										<li>
-											<a href="#addingsec"> -> <u>How to add products and orders.</u></a>
-										</li>
-										<li>
-											<a href="#searchsec"> -> <u>Products and orders searching.</u></a>
-										</li>
-										<li>
-											<a href="#pdfsec"> -> <u>PDF Downloading</u></a>
-										</li>
-										<li>
-											<a href="#vizsec"> -> <u>Data vizualization</u></a>
-										</li>
-
-									</ul>
-									<div style="margin-top: 3rem;">
-										<h1 id="loginsec">Login managment</h1>
-										<p>	
-											The application includes robust login management functionalities. 
-											Users can log in using their email and password through a secure login form. 
-											The login system checks the credentials against stored user data, ensuring secure access.
-											 Logged-in users can also log out, and there is support for different user roles, including 
-											 administrators who have additional privileges.
-										</p>
-										<h1 id="adminsec">Admin dashboard</h1>
-										<p>	
-											<div class="adminbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-												<img style="margin: 0; padding: 0; " src="images/4.png" alt="">
-											</div>	
-										</p>
-
-										<p>
-											Orders Count by Date: Displays the number of orders placed on each date, helping track sales trends over time. </br></br>
-Top Selling Products: Highlights the most popular products based on the quantity sold, providing insights into customer preferences.</br></br>
-Least Popular Products: Identifies products with the lowest sales, aiding in inventory management and marketing strategies.</br></br>
-Revenue by Date: Shows the total revenue generated on each date, providing a clear view of the business's financial performance.
-										</p>
-										<h1 id="addingsec">How to add products and orders</h1>
-										<p>	
-											Adding Products: Accessible via a dedicated form, users can input product details such as name, 
-											category, type, value, and price. This information is then saved to the database, 
-											making the new products available for orders.	
-										</p>
-										<p>
-											Users can create new orders by filling out an order form, which includes customer 
-											information and order items. Each order item includes a product, quantity, and total price. 
-											The application ensures that sufficient stock is available for each product and calculates the total 
-											order price, applying a discount if applicable.
-										</p>
-										<h1 id="searchsec">Products and orders searching</h1>
-										<div class="searchcontent">
-											<div class="searchbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-												<img style="margin: 0; padding: 0; " src="images/111.png" alt="">
-											</div>
-											<div class="pbox">
-												<p>	Users can search for products using a search query that matches the product name. 
-													The search results display relevant products, facilitating easy inventory management.
-												</p>
-												<p>
-													Users can search for orders by customer name or date. 
-													The application processes the search queries and returns matching orders, 
-													including the total quantity of items in each order.
-												</p>
-											</div>
-
-										</div>
-										<h1 id="pdfsec">PDF Downloading</h1>
-										<p>		
-											For each order, users can download a detailed PDF summary.
-											 This feature generates a PDF document containing all relevant order details, 
-											 such as customer information, order items, quantities, and prices. 
-											 The PDF is formatted for clarity and includes a total order price and any applied discounts.
-											  This functionality helps in maintaining organized and accessible records of orders.
-										</p>
-										<div class="pdfbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/5.png" alt="">
-										</div>
-										<h1 id="vizsec">Data vizualization</h1>
-
-										<p>		
-										</p>
-										<div class="viz1" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/100.png" alt="">
-										</div>	
-										<div class="viz2" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/3.png" alt="">
-										</div>	
-
-									</div>
-								</section>
+								<h2>Login</h2>
+								<h2>File uploading</h2>
+								<h2>Data reading</h2>
+								<h2>Data vizualization</h2>
+								<h2>Filtering by date</h2>
 							</article>
 
 							<article id="Setup" class="panel">
-								<section class="featuressite">
-									<h2 class="securityheader">Download for Windows</h2>
-									<p>
-										1. Download files from <a style="color: green;" href="">here</a>. </br>
-										2. Open application folder in IDE and create new terminal.</br>
-										3. Create and activate new virtual environment. </br>
-										4. Paste in terminal -> .venv/scripts/activate</br>
-										5. Paste in terminal -> pip install -r req.txt</br>
-										6. Paste in terminal -> python app.py
-									</p>
-	
-									
-									<h2 class="securityheader">Download for Unix</h2>
-									<p>
-										1. Download files from <a style="color: green;" href="">here</a>.</br>
-										2. Open application folder in IDE and create new terminal.</br>
-										3. Create and activate new virtual environment. </br>
-										4. Paste in terminal -> source .venv/bin/activate</br>
-										5. Paste in terminal -> pip3 install -r req.txt</br>
-										6. Paste in terminal -> python3 app.py
-									</p>
-
-									<h2 class="securityheader">User passwords:</h2>
-									<p>admin@company.com; zaq1@WSX</p>
-									<p>employee@company.com; Bhgvc4</p>
-								</section>
+								
 							</article>
 
 					</div>
@@ -334,4 +327,18 @@ Revenue by Date: Shows the total revenue generated on each date, providing a cle
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
+	<script>
+		function copyCode(btn) {
+			var code = btn.nextElementSibling.innerText;
+			navigator.clipboard.writeText(code).then(function() {
+				btn.textContent = 'Copied!';
+				setTimeout(function() {
+					btn.textContent = 'Copy';
+				}, 2000);
+			}, function() {
+				btn.textContent = 'Failed to copy';
+			});
+		}
+	</script>
 </html>
