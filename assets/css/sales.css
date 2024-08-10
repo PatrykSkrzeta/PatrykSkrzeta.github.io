@@ -2361,13 +2361,13 @@ li p{
 	cursor: pointer;
 	font-size: 12px;
 }
-.salelogo{
+.chartimg{
 	width: 70vw;
 }
 
 @media (min-width: 700px) {
 
-	.salelogo{
+	.chartimg{
 		width: 30vw;
 	}
 
