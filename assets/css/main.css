@@ -2350,6 +2350,10 @@ gap: 2rem;
 	background-color: #783761;
 }
 
+.chartimg{
+	width: 70vw;
+}
+
 @media only screen and (max-width: 1001px) {
 	.projectbtn{
 		width: 5rem;
@@ -2392,6 +2396,9 @@ gap: 2rem;
 	.introbox p{
 		font-size: 4rem;
 	}
+	.chartimg{
+		width: 30vw;
+	}
   }
 
 .gitlink{
@@ -2404,7 +2411,6 @@ gap: 2rem;
 .projectDescription{
 	color: black;
 }
-
 
   /* Firefox */
   * {
@@ -2426,3 +2432,14 @@ gap: 2rem;
     border-radius: 10px;
     border: 3px none #000000;
   }
+
+.technologies{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
