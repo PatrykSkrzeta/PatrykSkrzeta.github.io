@@ -2392,6 +2392,11 @@ section{
 .codephone{
 	height: 50vh;
 }
+
+.customization img{
+	height: 30vh;
+}
+
 @media (min-width: 700px) {
 
 	.imgcontainer{
@@ -2478,7 +2483,7 @@ section{
 
 
 	.notifi img{
-		width: 20vw;
+		width: 30vw;
 	}
 
 	.notifi{
