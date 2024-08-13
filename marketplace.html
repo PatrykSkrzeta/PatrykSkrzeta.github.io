@@ -48,7 +48,7 @@
 												</li>
 												<li>
 													<i  class="icon solid fa-lock"></i>
-													<p>Two-step verification.</p>
+													<p>Locked pages for guests.</p>
 												</li>
 												<li>
 													<i  class="icon solid fa-money-bill"></i>
@@ -171,10 +171,10 @@
 											Security
 										</h2>
 										<p>
-											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection.
+											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection, just like the verification code used in two-step verification.
 										</p>
 										<div class="hashbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/hash.png" alt="">
+											<img style="margin: 0; padding: 0; " src="images/security.png" alt="">
 										</div>
 										<p>
 											Upon successful authentication, a 6-digit verification code is generated and emailed to the user. 
@@ -216,6 +216,9 @@
 										</li>
 										<li>
 											<a href="#usersec"> -> <u>User interactivity</u></a>
+										</li>
+										<li>
+											<a href="#ordercus"> -> <u>Order customizations</u></a>
 										</li>
 									</ul>
 									<div style="margin-top: 3rem;">
@@ -302,7 +305,7 @@
 										</p>
 
 										<div class="viz2" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/3.png" alt="">
+											<img style="margin: 0; padding: 0; " src="images/customers.png" alt="">
 										</div>	
 
 									</div>
@@ -321,8 +324,23 @@
 											<img style="margin: 0; padding: 0; " src="images/7.png" alt="">
 											
 										</div>
+										<p>
+											Also I added toggle menu for better user experience.
+										</p>
+										<div class="notifi" style=" display: flex; justify-content: center; align-items: center; align-content: center; margin-top: 1rem; gap: 2rem">
+											<img src="images/options.png" alt="">
+											<img src="images/navbar.png" alt="">
+										</div>
+
+									</div>
+
+									<h1 id="ordercus" style="margin-top: 3rem;">Order customization</h1>
+									<p>User can customize orders description and change dot color, which later helps in filtering and keeping application clean.</p>
+									<div class="customization" style=" display: flex; justify-content: center; align-items: center; align-content: center; margin-top: 1rem; gap: 2rem">
+										<img src="images/customization.png" alt="">
 									</div>
 								</section>
+								
 							</article>
 
 							<article id="Setup" class="panel">
