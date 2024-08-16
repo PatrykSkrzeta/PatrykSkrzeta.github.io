@@ -2287,7 +2287,7 @@ input, select, textarea {
 .imgcontainer{
 	width: 100%;
 	height: 40vh;
-	background-image: url('../../images/orders1.png');
+	background-image: url('../../images/details1.png');
 	margin-bottom: 5rem;
 	background-size: cover;
 	background-position: centerord;
@@ -2402,7 +2402,7 @@ section{
 	.imgcontainer{
 		width: 50vw;
 		height: 50vh;
-		background-image: url('../../images/orders1.png');
+		background-image: url('../../images/details1.png');
 		margin-bottom: 5rem;
 		background-size: cover;
 	}
