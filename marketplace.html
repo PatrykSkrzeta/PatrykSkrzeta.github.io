@@ -104,6 +104,25 @@
 									<div class="nestedex" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
 										<img style="margin: 0; padding: 0; " src="images/nestedfilesex.png" alt="">
 									</div>
+
+									<h2 class="securityheader">Security</h2>
+										<p>
+											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection, just like the verification code used in two-step verification.
+										</p>
+										<div class="hashbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img style="margin: 0; padding: 0; " src="images/security.png" alt="">
+										</div>
+										<p>
+											Upon successful authentication, a 6-digit verification code is generated and emailed to the user. 
+											This code must be entered on the verification page to complete the login process.
+											The verification ensures that only the legitimate user can access the account. If the email or password is incorrect,
+											access is denied. This two-step process enhances security by adding an additional layer of verification beyond just the password.
+										</p>
+										<div class="codebox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
+											<img class="codewindow"src="images/check.png" alt="">
+											<img class="codephone" style="margin: 0; padding: 0; " src="images/code1.png" alt="">
+											
+										</div>
 										<h2 class="securityheader">
 											Process automation
 										</h2>
@@ -166,26 +185,6 @@
 										</p>
 										<div class="orderbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
 											<img style="margin: 0; padding: 0; " src="images/orderpdf.png" alt="">
-										</div>
-										<h2 class="securityheader">
-											Security
-										</h2>
-										<p>
-											User passwords are hashed using Werkzeug Security. During login, check_password_hash verifies the entered password against the stored hash. Plain-text passwords are never saved in the User collection, just like the verification code used in two-step verification.
-										</p>
-										<div class="hashbox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img style="margin: 0; padding: 0; " src="images/security.png" alt="">
-										</div>
-										<p>
-											Upon successful authentication, a 6-digit verification code is generated and emailed to the user. 
-											This code must be entered on the verification page to complete the login process.
-											The verification ensures that only the legitimate user can access the account. If the email or password is incorrect,
-											access is denied. This two-step process enhances security by adding an additional layer of verification beyond just the password.
-										</p>
-										<div class="codebox" style=" display: flex; justify-content: center; align-items: center; align-content: center;">
-											<img class="codewindow"src="images/check.png" alt="">
-											<img class="codephone" style="margin: 0; padding: 0; " src="images/code1.png" alt="">
-											
 										</div>
 
 										<h2 class="securityheader">
