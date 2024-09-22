@@ -2220,6 +2220,10 @@ input, select, textarea {
 
 }
 
+.smooth{
+	margin-bottom: 2rem;
+}
+
 .frontendp p{
 	color: white;
 	font-size: 1.5rem;
